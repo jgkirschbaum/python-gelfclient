@@ -7,8 +7,8 @@ import sys
 import copy
 from datetime import datetime
 
-string_types = str   if sys.version_info.major == 3 else basestring
-xrange       = range if sys.version_info.major == 3 else xrange
+string_types = str   if sys.version_info[0] == 3 else basestring
+xrange       = range if sys.version_info[0] == 3 else xrange
 
 class UdpClient():
 
